@@ -5,6 +5,7 @@
   "main": "bin/server.js",
   "scripts": {
     "build": "webpack --optimize-minimize --config build/webpack.config.js",
+    "start": "node bin/server.js",
     "test": "mocha --compilers js:babel-register --recursive"
   },
   "repository": {
