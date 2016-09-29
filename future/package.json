@@ -1,0 +1,20 @@
+{
+  "name": "testpilot",
+  "version": "2.0.0",
+  "description": "A place where ideas come to idea",
+  "main": "bin/server.js",
+  "scripts": {
+    "build": "webpack --optimize-minimize --config build/webpack.config.js",
+    "test": "mocha --compilers js:babel-register --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mozilla/testpilot.git"
+  },
+  "author": "Mozilla (https://mozilla.org/)",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/mozilla/testpilot/issues"
+  },
+  "homepage": "https://github.com/mozilla/testpilot#readme"
+}
