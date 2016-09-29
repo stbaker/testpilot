@@ -1,5 +1,7 @@
 const path = require('path');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const config = require('../config');
 
 const webpack = {
@@ -18,7 +20,8 @@ const webpack = {
   },
   module: {
     loaders: []
-  }
+  },
+  plugins: []
 };
 
 webpack.module.loaders.push({
@@ -26,5 +29,14 @@ webpack.module.loaders.push({
   include: config.path.src,
   loader: 'babel?cacheDirectory',
 });
+
+webpack.module.loaders.push({
+  test: /\.hbs/,
+  loader: 'handlebars-loader'
+});
+
+webpack.plugins.push(new HtmlWebpackPlugin({
+  template: `!!handlebars!${config.path.index}`
+}));
 
 module.exports = webpack;
