@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/mozilla/testpilot/issues"
   },
-  "homepage": "https://github.com/mozilla/testpilot#readme"
+  "homepage": "https://github.com/mozilla/testpilot#readme",
+  "devDependencies": {
+    "ejs-loader": "0.3.0",
+    "handlebars-loader": "1.4.0",
+    "html-webpack-plugin": "2.22.0"
+  }
 }

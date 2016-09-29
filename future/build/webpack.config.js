@@ -1,5 +1,7 @@
 const path = require('path');
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 const config = require('../config');
 
 const webpack = {
@@ -18,7 +20,15 @@ const webpack = {
   },
   module: {
     loaders: []
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin(JSON.stringify(config.globals)),
+    new HtmlWebpackPlugin({
+      pontoon: config.includePontoon,
+      template: config.path.index
+    }),
+    new webpack.HotModuleReplacementPlugin()
+  ]
 };
 
 webpack.module.loaders.push({
@@ -27,4 +37,4 @@ webpack.module.loaders.push({
   loader: 'babel?cacheDirectory',
 });
 
-module.exports = webpack;
+module.exports = webpackConfig;

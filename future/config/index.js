@@ -9,13 +9,23 @@ const config = {
   server: {
     host: 'localhost',
     port: 8000
-  }
+  },
+  includePontoon: false
 };
 
 config.path.dist = path.resolve(config.path.base, 'dist');
 config.path.src = path.resolve(config.path.base, 'src');
 config.path.app = path.resolve(config.path.src, 'app.js');
+config.path.index = path.resolve(config.path.src, 'index.ejs');
 
-const env = tryRequire(`../${config.env}.js`) || {};
+try {
+  const env = require(`./${config.env}`);
+  Object.assign(config, env);
+} catch(e) {}
 
-module.exports = Object.assign(config, env);
+// Webpack globals
+config.globals = {
+  '__ENV__': config.env
+};
+
+module.exports = config;
