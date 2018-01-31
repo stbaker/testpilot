@@ -8,7 +8,19 @@ import { shallow } from "enzyme";
 import Footer from "./index";
 
 describe("app/components/Footer", () => {
-  let subject, sendToGA;
+  const clickEventFactory = label => {
+    const getAttribute = sinon.spy(() => label);
+    const mockClickEvent = {
+      preventDefault: sinon.spy(),
+      stopPropagation: sinon.spy(),
+      target: {
+        getAttribute,
+        href: '/foo'
+      }
+    };
+    return { mockClickEvent, getAttribute };
+  };
+  let getAttribute, subject, sendToGA;
   beforeEach(() => {
     sendToGA = sinon.spy();
     subject = shallow(<Footer sendToGA={sendToGA} />);
@@ -24,15 +36,17 @@ describe("app/components/Footer", () => {
 
   it("should ping GA on social link clicks", () => {
     ["github", "twitter"].forEach(label => {
-      const getAttribute = sinon.spy(() => label);
+      const { mockClickEvent, getAttribute } = clickEventFactory(label);
+
       subject.find(`.social-links .link-icon.${label}`)
-        .simulate("click", { target: { getAttribute } });
+        .simulate("click", mockClickEvent);
 
       expect(getAttribute.called).to.be.true;
       expect(sendToGA.lastCall.args).to.deep.equal(["event", {
         eventCategory: "FooterView Interactions",
         eventAction: "social link clicked",
-        eventLabel: label
+        eventLabel: label,
+        outboundURL: mockClickEvent.target.href
       }]);
     });
   });
