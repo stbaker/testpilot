@@ -1,0 +1,63 @@
+id: 18
+title: 'Laserlike'
+slug: laserlike
+platforms: ['addon']
+locales:
+  - 'en'
+launch_date: '2018-01-01T00:00:00.00Z'
+locale_grantlist:
+  - 'en'
+thumbnail: /static/images/experiments/laserlike/icon/thumbnail.png
+description: >
+  Fusce sit amet leo consectetur, fermentum turpis vel, laoreet lacus. Nunc commodo turpis ac ante mollis porttitor.
+introduction: >
+  Integer in ligula ullamcorper, gravida ex eu, elementum mi. Phasellus enim lacus, posuere quis ultricies ut, dapibus et nisl. Nunc volutpat efficitur ex, vitae semper libero convallis quis.
+image_twitter: /static/images/experiments/laserlike/social/laserlike-twitter.png
+image_facebook: /static/images/experiments/laserlike/social/laserlike-facebook.png
+changelog_url: 'https://github.com/mozilla/testpilot/releases'
+contribute_url: 'https://github.com/mozilla/testpilot'
+bug_report_url: 'https://github.com/mozilla/testpilot/issues'
+discourse_url: 'https://discourse.mozilla-community.org/c/test-pilot/laserlike'
+privacy_notice_url: 'https://github.com/mozilla/testpilot/blob/docs/metrics.md'
+privacy_preamble: >
+  The Laserlike Test Pilot experiment is brought to you through collaboration
+  between Laserlike, and Mozilla.
+measurements:
+  - >
+    Lorem ipsum
+  - >
+    Dolor sit amet
+  - >
+    Consectetur adipiscing elit
+xpi_url: 'https://testpilot.firefox.com/files/testpilot@laserlike.com/latest'
+addon_id: 'testpilot@laserlike.com'
+gradient_start: '#5447F6'
+gradient_stop: '#0E84F3'
+details:
+  -
+    image: /static/images/experiments/laserlike/details/detail1.png
+    copy: >
+      Nunc quam augue, iaculis nec ornare vel, faucibus sed turpis.
+  -
+    image: /static/images/experiments/laserlike/details/detail2.png
+    copy: >
+      Vivamus finibus, ligula quis porta consectetur, nisl sem porta lorem, fringilla vestibulum ante magna non enim.
+  -
+    image: /static/images/experiments/laserlike/details/detail3.png
+    copy: >
+       Nunc egestas ipsum vel arcu vulputate, ac auctor risus posuere.
+tour_steps:
+  -
+    image: /static/images/experiments/laserlike/tour/tour1.png
+    copy: Sed molestie est neque, id consequat dui suscipit ac.
+  -
+    image: /static/images/experiments/laserlike/tour/tour2.png
+    copy: Duis non lacinia nunc. Praesent efficitur diam ex, nec tincidunt diam scelerisque tempus.
+  -
+    image: /static/images/experiments/shared/tour-final.png
+    copy: You can always give us feedback or disable Laserlike from Test Pilot.
+contributors:
+  -
+    display_name: 'Laserlike'
+    avatar: /static/images/experiments/laserlike/avatars/laserlike-avatar.png
+order: 1
