@@ -9,9 +9,9 @@ locale_grantlist:
   - 'en'
 thumbnail: /static/images/experiments/laserlike/icon/thumbnail.png
 description: >
-  Fusce sit amet leo consectetur, fermentum turpis vel, laoreet lacus. Nunc commodo turpis ac ante mollis porttitor.
+  A Next button for the web. Laserlike brings you content to Read Next based on your visit history and your current web page.
 introduction: >
-  Integer in ligula ullamcorper, gravida ex eu, elementum mi. Phasellus enim lacus, posuere quis ultricies ut, dapibus et nisl. Nunc volutpat efficitur ex, vitae semper libero convallis quis.
+  Laserlike adds a sidebar of "Read Next" related content based on your currently viewed web page. It also uses your history to suggested a personalized "For You" feed of high quality content.
 image_twitter: /static/images/experiments/laserlike/social/laserlike-twitter.png
 image_facebook: /static/images/experiments/laserlike/social/laserlike-facebook.png
 changelog_url: 'https://github.com/mozilla/testpilot/releases'
@@ -24,11 +24,11 @@ privacy_preamble: >
   between Laserlike, and Mozilla.
 measurements:
   - >
-    Lorem ipsum
+    Laserlike collects each visited URL to suggest Read Next content based on each URL, as well as make personalized For You recommendations.
   - >
-    Dolor sit amet
+    Laserlike collects up to 500 recently visited URLs from your browser history to suggest personalized For You recommendations.
   - >
-    Consectetur adipiscing elit
+    Laserlike will also collect information about your interaction with the add-on, such as how you access the feature, and what buttons you may click.
 xpi_url: 'https://testpilot.firefox.com/files/testpilot@laserlike.com/latest'
 addon_id: 'testpilot@laserlike.com'
 gradient_start: '#5447F6'
