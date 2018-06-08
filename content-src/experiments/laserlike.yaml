@@ -39,7 +39,7 @@ details:
   -
     image: /static/images/experiments/laserlike/details/detail1.png
     copy: >
-      Laserlike shows Read Next suggestions in your browser's sidebar.
+      ’Laserlike shows Read Next suggestions in your browser's sidebar.
   -
     image: /static/images/experiments/laserlike/details/detail2.png
     copy: >
@@ -56,6 +56,10 @@ details:
     image: /static/images/experiments/laserlike/details/detail5.png
     copy: >
        Anytime Laserlike finds additional stories you might like, the toolbar icon shows a red badge — click it to open your For You feed.
+  -
+    image: /static/images/experiments/laserlike/details/detail6.png
+    copy: >
+       Clicking reveals the pop-up with For You content.
 tour_steps:
   -
     image: /static/images/experiments/laserlike/tour/tour1.png
