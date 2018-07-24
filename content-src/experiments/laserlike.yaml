@@ -28,8 +28,6 @@ measurements:
   - >
     Laserlike collects each visited URL to suggest Read Next content based on each URL, as well as make personalized For You recommendations.
   - >
-    Laserlike collects up to 500 recently visited URLs from your browser history to suggest personalized For You recommendations.
-  - >
     Laserlike will also collect information about your interaction with the add-on, such as how you access the feature, and what buttons you may click.
   - >
     Laserlike does not collect any information during private browsing. Additionally, it has a Pause function using which you can pause all data collection till you choose to un-pause it.
@@ -51,17 +49,17 @@ details:
     copy: >
        Browse without the sidebar, and access Read Next anytime with the click of a button. When Laserlike finds new content related to your current page, a green badge appears on the Laserlike toolbar icon.
   -
-    image: /static/images/experiments/laserlike/details/detail4.png
+    image: /static/images/experiments/laserlike/details/detail1.png
     copy: >
-       Click the Laserlike toolbar icon to open the Read Next pop-up.
+       Click the Laserlike toolbar icon to open the sidebar.
   -
     image: /static/images/experiments/laserlike/details/detail5.png
     copy: >
-       Anytime Laserlike finds additional stories you might like, the toolbar icon shows a red badge — click it to open your For You feed.
+       Anytime Laserlike finds additional stories you might like, the toolbar icon shows a red badge.
   -
-    image: /static/images/experiments/laserlike/details/detail6.png
+    image: /static/images/experiments/laserlike/details/detail2.png
     copy: >
-       Clicking reveals the pop-up with For You content.
+       Clicking reveals the sidebar with For You content.
 tour_steps:
   -
     image: /static/images/experiments/laserlike/tour/tour1.png
